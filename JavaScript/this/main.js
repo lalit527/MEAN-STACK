@@ -85,6 +85,30 @@ b.foo()
 //constructor
 
 function sum(a, b) {
-  console.log(a);
-  console.log(b);
+  this.a = a;
+  this.b = b;
+  console.log(this.a);
+  console.log(this.b);
+  console.log(this);
+}
+
+var foo = new sum(1, 2);
+
+
+///
+var foo = {
+  a: '',
+  b: ''
+}
+
+var bar = Object.create(foo)
+var bar = Object.assign({}, foo);
+
+const foo = 2
+
+const arr = [1,2,3]
+arr[0] = 5
+
+const obj = {
+  a:'val'
 }

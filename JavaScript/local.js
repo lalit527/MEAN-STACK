@@ -1,12 +1,4 @@
 //this
-var a = {
-  foo: function() {
-    console.log(this.bar);
-  }
-}
+oXXooooo -> 1
 
-var b = {
-  bar: 'Hello'
-}
-
-a.call(b);
+0gdkgkj -> [5,2,3,8]
