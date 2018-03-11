@@ -1,12 +1,12 @@
-function adder() {
-  var value = 0;
-  var a = function(){
-    console.log(++value);
+//this
+var a = {
+  foo: function() {
+    console.log(this.bar);
   }
-  return a;
 }
 
-var add = adder();
-var add1 = adder();
-add();
-add1();
+var b = {
+  bar: 'Hello'
+}
+
+a.call(b);

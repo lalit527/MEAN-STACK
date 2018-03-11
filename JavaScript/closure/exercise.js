@@ -11,4 +11,7 @@ should return 12
 //how to check if a variable is
 //an array
 
-//hoe to check if an object is empty
+//how to check if an object is empty
+
+//valu1, value2
+//add, sub, mul, div
