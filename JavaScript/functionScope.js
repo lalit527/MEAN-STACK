@@ -12,9 +12,9 @@ function foo() {
   console.log(c);
   function bar() {
     var c = 'World';
-    console.log(a);//bar
-    console.log(b);//hello
-    console.log(c);//World
+    console.log(a);
+    console.log(b);
+    console.log(c);
   }
   bar();
 }
