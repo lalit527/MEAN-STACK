@@ -17,3 +17,31 @@ var foo = function name() {
 }
 
 foo();
+
+///
+function b() {
+  console.log("World");
+}
+
+var a;
+
+var c;
+
+var foo;
+
+b()
+a()
+
+a = function() {
+  console.log("Hello");
+}
+
+
+c = 2;
+
+foo = function name() {
+  console.log("Hello");
+
+}
+
+foo();

@@ -1,4 +1,18 @@
-var a;
-var b;
+(
+  function(){
+    var a = 'ny';
 
-////Running
+var foo = function(){
+  var b = "Hello";
+}
+
+foo();
+
+(foo)();
+
+(function IFEE(){
+  var b = "Hello";
+}) ();
+
+
+})();

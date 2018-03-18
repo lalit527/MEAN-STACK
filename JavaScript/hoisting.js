@@ -29,3 +29,70 @@ console.log(b);
 5-> a#undefined
 6-> b#2
 */
+
+
+
+var foo = "bar";
+
+function bar() {
+  var foo =  "baz";
+}
+
+bar()
+
+function baz(foo) {
+  foo = "bam";
+  bam = "yay";
+}
+
+baz(2)
+
+//compilation
+
+function bar() {
+  var foo =  "baz";
+}
+
+
+
+function baz(foo) {
+  foo = "bam";
+  bam = "yay";
+}
+
+var foo;
+
+
+
+//Running
+
+
+
+/*
+Expre
+*/
+
+var foo = "bar";
+
+function bar() {
+  var foo =  "baz";
+}
+
+bar()
+
+function baz(foo) {
+  foo = "bam";
+  bam = "yay";
+}
+
+baz(2)
+
+var a = function foo(){
+  console.log("Hello");
+}
+
+var a = function(){
+  console.log("Hello");
+}
+
+a()
