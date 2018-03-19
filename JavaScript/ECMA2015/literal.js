@@ -1,7 +1,7 @@
 var name = "World";
 var greeting = "Hello " + name + "!";
 ///ES2015
-var name = "Kyle";
+var name = "World";
 
 var greeting = `Hello ${name}!`;
 

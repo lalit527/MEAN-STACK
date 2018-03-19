@@ -3,6 +3,13 @@ var b = [ 1, ...a, 5 ];
 
 console.log( b ); //// [1,2,3,4,5]
 
+//output for this
+function foo(...z, x, y) {
+	console.log( x, y, z );
+}//gives error rest parameter should be last
+
+foo( 1, 2, 3, 4, 5 );			// 1 2 [3,4,5]
+
 
 function foo(x, y, ...z) {
 	console.log( x, y, z );

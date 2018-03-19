@@ -43,4 +43,11 @@ function foo( x = w + 1, y = x + 1, z = z + 1 ) {
 	console.log( x, y, z );
 }
 
-foo();	
+foo();
+
+//function as default values
+function ajax(url, cb = function(){}) {
+	// ..
+}
+
+ajax( "http://some.url.1" );

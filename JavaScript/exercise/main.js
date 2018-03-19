@@ -66,3 +66,34 @@ arr[0] = 5;
 (function IFEE() {
 
 })();
+
+
+///**************//
+console.log(this);
+var a = {
+  f: function() {
+    console.log(this);
+  }
+}
+
+var a = {
+  f: () => {
+    console.log(this);
+  }
+}
+
+var a = {
+  f: function() {
+    return function(){
+      console.log(this);
+    }
+  }
+}
+
+var a = {
+  f: function() {
+    return () => {
+      console.log(this);
+    }
+  }
+}
