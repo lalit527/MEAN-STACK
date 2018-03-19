@@ -14,8 +14,17 @@ var tmp = bar(),
 	x = tmp.x, y = tmp.y, z = tmp.z;
 
 console.log( x, y, z );				// 4 5 6
-
-
+var x = "hello";
+var a = {
+	x: x
+}
+a.x
+var a = {
+	x
+}
+a.x
+x: x
+x
 //Object Property
 var { x, y, z } = bar();
 
@@ -34,6 +43,8 @@ var a, b, c, x, y, z;
 
 [a,b,c] = foo();
 ( { x, y, z } = bar() );
+
+var { x, y, z } = bar();
 
 console.log( a, b, c );				// 1 2 3
 console.log( x, y, z );				// 4 5 6

@@ -1,7 +1,15 @@
-console.log(1+2+'3');//33
+a(1)
 
-console.log(1+'2'+'3');//123
+function a(foo){
+  if(foo>20){
+    return foo;
+  }
+  return b(foo+2);
+}
+function b(foo){
+  return c(foo)+1;
+}
 
-console.log('1'+'2'+'3');//123
-console.log('1'++'2'+'3');//33
-console.log('1'++'2'++'3');//6
+function c(foo){
+  return a(foo*2);
+}

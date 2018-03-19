@@ -15,4 +15,14 @@ var a = [1,2,3,4,5];
 
 a = a.map( v => v * 2 );
 
+a = a.filter( v => {
+	if(a%2===0){
+		return a;
+	}
+});
+
+a = a.reduce( v => {
+	return v+arr[v];
+});
+
 console.log( a );
